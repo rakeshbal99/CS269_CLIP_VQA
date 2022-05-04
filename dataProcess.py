@@ -1,4 +1,5 @@
 import json
+import os
 annotations_path = "v2_mscoco_val2014_annotations.json"
 questions_path = "v2_OpenEnded_mscoco_val2014_questions.json"
 
@@ -10,7 +11,7 @@ f = open(questions_path)
 ques = json.load(f)
 f.close()
 
-split_len = 50000
+split_len = 25000
 
 new_anno = {}
 
